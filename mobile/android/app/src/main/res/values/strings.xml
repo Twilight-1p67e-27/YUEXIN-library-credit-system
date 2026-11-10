@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">阅信</string>
+    <string name="title_activity_main">阅信</string>
+    <string name="package_name">edu.library.credit</string>
+    <string name="custom_url_scheme">edu.library.credit</string>
+</resources>

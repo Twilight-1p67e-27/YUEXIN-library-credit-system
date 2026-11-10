@@ -1,0 +1,21 @@
+[Unit]
+Description=Library Credit API
+After=network.target
+
+[Service]
+User=library
+Group=library
+WorkingDirectory=/opt/library-credit
+Environment=DB_PATH=/var/lib/library-credit/library.db
+Environment=CREDIT_THRESHOLD=60
+ExecStart=/opt/library-credit/.venv/bin/uvicorn backend.app:app --host 127.0.0.1 --port 8000 --no-proxy-headers
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/library-credit
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,4 @@
+# Replace with your school's real domain; point DNS to the server.
+library.example.edu {
+    reverse_proxy 127.0.0.1:8000
+}

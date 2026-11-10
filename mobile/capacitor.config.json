@@ -1,0 +1,8 @@
+{
+  "appId": "edu.library.credit",
+  "appName": "闃呬俊",
+  "webDir": "www",
+  "server": {
+    "cleartext": true
+  }
+}

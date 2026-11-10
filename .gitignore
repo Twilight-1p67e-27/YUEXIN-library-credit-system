@@ -1,0 +1,10 @@
+data/
+*.db*
+__pycache__/
+.pytest_cache/
+node_modules/
+mobile/android/.gradle/
+mobile/android/**/build/
+mobile/android/local.properties
+mobile/ios/App/Pods/
+*.keystore
